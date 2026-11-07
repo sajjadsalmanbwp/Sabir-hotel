@@ -1,0 +1,47 @@
+{
+    "currency": "PKR",
+    "delivery_charge_pkr": 150,
+    "menu": [
+        {
+            "name": "chicken biryani",
+            "price_pkr": 350
+        },
+        {
+            "name": "beef biryani",
+            "price_pkr": 400
+        },
+        {
+            "name": "chicken karahi",
+            "price_pkr": 850
+        },
+        {
+            "name": "chicken tikka",
+            "price_pkr": 380
+        },
+        {
+            "name": "seekh kabab",
+            "price_pkr": 450
+        },
+        {
+            "name": "naan",
+            "price_pkr": 40
+        },
+        {
+            "name": "raita",
+            "price_pkr": 50
+        },
+        {
+            "name": "cold drink",
+            "price_pkr": 80
+        }
+    ],
+    "notes": "EXAMPLE prices only. Replace every price with Sabir Hotel real menu prices. Item names must stay lowercase, as customers type them. Do NOT put API keys or passwords in this file - those go in .env only. NOTE: the bot reads ONLY menu + delivery_charge_pkr from this file; whatsapp_numbers and server_url here are notes only and are NOT read by the bot - put numbers and server URL in .env. Delivery charge: this file's delivery_charge_pkr IS used, but only if FIXED_DELIVERY_CHARGE is not set in .env (the old .env.template set it to 150, which silently ignored this value - that line is now commented out). If /settings saves a delivery charge, it writes FIXED_DELIVERY_CHARGE to .env and that wins after restart.",
+    "restaurant": "Sabir Hotel",
+    "server_url": "",
+    "sheet_name": "Sabir Hotel",
+    "whatsapp_numbers": {
+        "bot_sender": "",
+        "kitchen": "",
+        "owner": ""
+    }
+}
