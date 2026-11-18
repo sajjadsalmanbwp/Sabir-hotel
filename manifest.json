@@ -1,0 +1,42 @@
+{
+  "business": "Al Mecca Hotel and BBQ",
+  "slug": "al-mecca-hotel-and-bbq",
+  "business_type": "restaurant",
+  "language": "Roman Urdu",
+  "channels": [
+    "whatsapp",
+    "calling"
+  ],
+  "status": "draft — needs human review",
+  "generated_at": "2026-11-17T19:35:46.465483+00:00",
+  "generated_by": "Agent Factory v1.0.0",
+  "files": [
+    ".env.template",
+    "al-mecca-hotel-and-bbq_bot.py",
+    "al-mecca-hotel-and-bbq_calling_agent.py",
+    "al-mecca-hotel-and-bbq_config.json",
+    "checklist.md",
+    "requirements.txt",
+    "setup.md",
+    "manifest.json"
+  ],
+  "needs": [
+    "Verify every price in the config JSON with the real business (spec prices may be examples).",
+    "Twilio Account SID + Auth Token (TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN).",
+    "Gemini API key (GEMINI_API_KEY) — check it in Google AI Studio; a real key starts with 'AIza...'.",
+    "WhatsApp sender number (TWILIO_WHATSAPP_NUMBER) — Twilio sandbox number for testing, bought number for live.",
+    "Kitchen + owner WhatsApp numbers (KITCHEN_WHATSAPP, OWNER_WHATSAPP).",
+    "Admin username + strong password (ADMIN_USERNAME, ADMIN_PASSWORD).",
+    "Google Sheet named 'Al Mecca Hotel and BBQ' shared with the service-account email.",
+    "GOOGLE_CREDENTIALS_JSON pasted in Railway Variables (both services).",
+    "Railway deploy from GitHub (see setup.md) + Twilio webhooks.",
+    "Twilio voice number (TWILIO_VOICE_NUMBER) for the calling agent.",
+    "WordPress bridge — DEFERRED to a later version (v1 is WhatsApp + calling only)."
+  ],
+  "never": [
+    "The factory never deploys anything.",
+    "The factory never sends any message or email.",
+    "The factory never places any order or payment.",
+    "The factory never writes outside its output folder."
+  ]
+}

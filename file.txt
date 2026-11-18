@@ -1,0 +1,6 @@
+# Secrets + local junk — never commit these to GitHub.
+.env
+credentials.json
+*.pyc
+__pycache__/
+*.log

@@ -1,0 +1,50 @@
+{
+    "business": "Al Mecca Hotel and BBQ",
+    "business_type": "restaurant",
+    "language": "Roman Urdu",
+    "currency": "PKR",
+    "currency_symbol": "Rs.",
+    "delivery_charge": 150,
+    "items": [
+        {
+            "name": "chicken tikka",
+            "price": 380
+        },
+        {
+            "name": "seekh kabab",
+            "price": 450
+        },
+        {
+            "name": "malai boti",
+            "price": 550
+        },
+        {
+            "name": "beef kabab",
+            "price": 500
+        },
+        {
+            "name": "chicken karahi",
+            "price": 850
+        },
+        {
+            "name": "chicken biryani",
+            "price": 350
+        },
+        {
+            "name": "naan",
+            "price": 40
+        },
+        {
+            "name": "cold drink",
+            "price": 80
+        }
+    ],
+    "notes": "Prices in this file are the ONLY prices the bots use. Edit prices here, never in the MENU dict inside the .py files (this JSON overwrites it at startup). Item names must stay lowercase, as customers type them. Do NOT put API keys or passwords in this file - those go in .env only. Delivery charge: this file's delivery_charge IS used, but only if FIXED_DELIVERY_CHARGE is not set in .env (the .env.template leaves that line commented out for exactly this reason).",
+    "sheet_name": "Al Mecca Hotel and BBQ",
+    "whatsapp_numbers": {
+        "bot_sender": "",
+        "kitchen": "",
+        "owner": ""
+    },
+    "server_url": ""
+}
